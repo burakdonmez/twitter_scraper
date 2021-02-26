@@ -1,0 +1,234 @@
+# guido van rossum tweets. api returns 10 tweets even though the requested number is 30
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_nonce="", oauth_timestamp="",
+        oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="",
+        oauth_token="", oauth_signature=""
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: https://api.twitter.com/1.1/search/tweets.json?q=from%3Agvanrossum&include_entities=1&result_type=recent&count=30
+  response:
+    body:
+      string: '{"statuses":[{"created_at":"Thu Jun 10 23:13:35 +0000 2021","id":1403128238184955906,"id_str":"1403128238184955906","text":"D''oh,
+        I was confused, because Twitter turned the second (IC) link into a preview,
+        while keeping the first (manager)\u2026 https:\/\/t.co\/NaAnLHtHHn","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/NaAnLHtHHn","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1403128238184955906","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":1403126294963912706,"in_reply_to_status_id_str":"1403126294963912706","in_reply_to_user_id":15804774,"in_reply_to_user_id_str":"15804774","in_reply_to_screen_name":"gvanrossum","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":5,"favorite_count":27,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Thu
+        Jun 10 23:08:34 +0000 2021","id":1403126973887483907,"id_str":"1403126973887483907","text":"@valerybriz
+        Sorry to hear that. We''re open to remote though (in fact everyone so far
+        working on this is remote).","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"valerybriz","name":"ValeryBriz","id":829564145557200896,"id_str":"829564145557200896","indices":[0,11]}],"urls":[]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":1402807591718330370,"in_reply_to_status_id_str":"1402807591718330370","in_reply_to_user_id":829564145557200896,"in_reply_to_user_id_str":"829564145557200896","in_reply_to_screen_name":"valerybriz","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":7,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        Jun 10 23:05:52 +0000 2021","id":1403126294963912706,"id_str":"1403126294963912706","text":"Looks
+        like the IC link was hard to find from the tweet, so here it is: https:\/\/t.co\/NY92DBm82I","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/NY92DBm82I","expanded_url":"https:\/\/careers.microsoft.com\/us\/en\/job\/1062976\/Senior-Software-Engineer","display_url":"careers.microsoft.com\/us\/en\/job\/1062\u2026","indices":[71,94]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":1402756021358006272,"in_reply_to_status_id_str":"1402756021358006272","in_reply_to_user_id":15804774,"in_reply_to_user_id_str":"15804774","in_reply_to_screen_name":"gvanrossum","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":5,"favorite_count":27,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Thu
+        Jun 10 18:22:02 +0000 2021","id":1403054868756000768,"id_str":"1403054868756000768","text":"@cthoyt
+        @mypyproject Can you answer that?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"cthoyt","name":"Charles
+        Tapley Hoyt","id":1965093145,"id_str":"1965093145","indices":[0,7]},{"screen_name":"mypyproject","name":"The
+        Mypy Project","id":988784388,"id_str":"988784388","indices":[8,20]}],"urls":[]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":1402987594107932674,"in_reply_to_status_id_str":"1402987594107932674","in_reply_to_user_id":1965093145,"in_reply_to_user_id_str":"1965093145","in_reply_to_screen_name":"cthoyt","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        Jun 10 18:21:18 +0000 2021","id":1403054683497721859,"id_str":"1403054683497721859","text":"@lafp
+        @meszias Note there are two reqs, one manager, one IC.","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"lafp","name":"Leandro
+        Pereira","id":14276303,"id_str":"14276303","indices":[0,5]},{"screen_name":"meszias","name":"Alejandro
+        Mesias","id":17337442,"id_str":"17337442","indices":[6,14]}],"urls":[]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":1403043842220171271,"in_reply_to_status_id_str":"1403043842220171271","in_reply_to_user_id":14276303,"in_reply_to_user_id_str":"14276303","in_reply_to_screen_name":"lafp","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":2,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Wed
+        Jun 09 22:34:32 +0000 2021","id":1402756021358006272,"id_str":"1402756021358006272","text":"We''re
+        hiring for \"Faster CPython\"! https:\/\/t.co\/qpxiezVH5M, https:\/\/t.co\/NY92DBm82I","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/qpxiezVH5M","expanded_url":"https:\/\/careers.microsoft.com\/us\/en\/job\/1059714\/Principal-Software-Engineering-Manager","display_url":"careers.microsoft.com\/us\/en\/job\/1059\u2026","indices":[35,58]},{"url":"https:\/\/t.co\/NY92DBm82I","expanded_url":"https:\/\/careers.microsoft.com\/us\/en\/job\/1062976\/Senior-Software-Engineer","display_url":"careers.microsoft.com\/us\/en\/job\/1062\u2026","indices":[60,83]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":229,"favorite_count":852,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Wed
+        Jun 09 15:03:22 +0000 2021","id":1402642482215624705,"id_str":"1402642482215624705","text":"This
+        new release of mypy is a huge step forward. Type stubs for 3rd party packages
+        are now installed separately. Re\u2026 https:\/\/t.co\/sw4CNlLaLo","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/sw4CNlLaLo","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1402642482215624705","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":true,"quoted_status_id":1402628077558108162,"quoted_status_id_str":"1402628077558108162","quoted_status":{"created_at":"Wed
+        Jun 09 14:06:07 +0000 2021","id":1402628077558108162,"id_str":"1402628077558108162","text":"Mypy
+        0.900 was released. The Big Change is that third-party library stubs are installed
+        via stub packages. Mypy now\u2026 https:\/\/t.co\/7H2S7HRv0a","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/7H2S7HRv0a","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1402628077558108162","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":988784388,"id_str":"988784388","name":"The
+        Mypy Project","screen_name":"mypyproject","location":"","description":"Developers
+        of mypy, a static type checker for Python","url":"http:\/\/t.co\/sF1b8aN1","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/sF1b8aN1","expanded_url":"http:\/\/www.mypy-lang.org","display_url":"mypy-lang.org","indices":[0,20]}]},"description":{"urls":[]}},"protected":false,"followers_count":2065,"friends_count":37,"listed_count":66,"created_at":"Tue
+        Dec 04 13:36:24 +0000 2012","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":95,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2934877434\/eaca159133a3901e24ddb407d1235c25_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2934877434\/eaca159133a3901e24ddb407d1235c25_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":18,"favorite_count":107,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"retweet_count":35,"favorite_count":204,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Tue
+        Jun 08 18:22:40 +0000 2021","id":1402330250919350274,"id_str":"1402330250919350274","text":"@MK_Systems_nl
+        Nah, ik will niks met blockchain te maken hebben.","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MK_Systems_nl","name":"-MK-1311-","id":1579769695,"id_str":"1579769695","indices":[0,14]}],"urls":[]},"metadata":{"iso_language_code":"nl","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":1400405449669808134,"in_reply_to_status_id_str":"1400405449669808134","in_reply_to_user_id":1579769695,"in_reply_to_user_id_str":"1579769695","in_reply_to_screen_name":"MK_Systems_nl","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"favorited":false,"retweeted":false,"lang":"nl"},{"created_at":"Fri
+        Jun 04 03:13:03 +0000 2021","id":1400651788450029570,"id_str":"1400651788450029570","text":"@brandon_rhodes
+        Me too","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"brandon_rhodes","name":"Brandon
+        Rhodes","id":15366875,"id_str":"15366875","indices":[0,15]}],"urls":[]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":1400578773435793408,"in_reply_to_status_id_str":"1400578773435793408","in_reply_to_user_id":15366875,"in_reply_to_user_id_str":"15366875","in_reply_to_screen_name":"brandon_rhodes","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":16,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Fri
+        Jun 04 03:12:29 +0000 2021","id":1400651644711235584,"id_str":"1400651644711235584","text":"@dewitt
+        Woodworking is such a cliche for people in our line of work...","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"dewitt","name":"DeWitt
+        Clinton \ud83d\udc89\ud83d\udc89","id":673483,"id_str":"673483","indices":[0,7]}],"urls":[]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":1400571608708698113,"in_reply_to_status_id_str":"1400571608708698113","in_reply_to_user_id":673483,"in_reply_to_user_id_str":"673483","in_reply_to_screen_name":"dewitt","user":{"id":15804774,"id_str":"15804774","name":"Guido
+        van Rossum","screen_name":"gvanrossum","location":"San Francisco Bay Area","description":"Python''s
+        BDFL-emeritus, Distinguished Engineer at Microsoft, Computer History Fellow,
+        fully vaccinated. Opinions are my own. He\/him.","url":"https:\/\/t.co\/d7KfaZMnNU","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/d7KfaZMnNU","expanded_url":"http:\/\/python.org\/~guido\/","display_url":"python.org\/~guido\/","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":234060,"friends_count":529,"listed_count":4462,"created_at":"Mon
+        Aug 11 04:02:18 +0000 2008","favourites_count":1374,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":true,"statuses_count":3355,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/424495004\/GuidoAvatar_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15804774\/1400086274","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","withheld_in_countries":[]},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":2,"favorited":false,"retweeted":false,"lang":"en"}],"search_metadata":{"completed_in":0.041,"max_id":1403128238184955906,"max_id_str":"1403128238184955906","next_results":"?max_id=1400651644711235583&q=from%3Agvanrossum&count=30&include_entities=1&result_type=recent","query":"from%3Agvanrossum","refresh_url":"?since_id=1403128238184955906&q=from%3Agvanrossum&result_type=recent&include_entities=1","count":30,"since_id":0,"since_id_str":"0"}}'
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      content-disposition:
+      - attachment; filename=json.json
+      content-length:
+      - '31033'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 11 Jun 2021 12:33:11 GMT
+      expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      last-modified:
+      - Fri, 11 Jun 2021 12:33:11 GMT
+      pragma:
+      - no-cache
+      server:
+      - tsa_o
+      set-cookie:
+      - personalization_id="v1_jAnYUcdly0v7cJ8riA0BUA=="; Max-Age=63072000; Expires=Sun,
+        11 Jun 2023 12:33:11 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - guest_id=v1%3A162341479124223037; Max-Age=63072000; Expires=Sun, 11 Jun 2023
+        12:33:11 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      status:
+      - 200 OK
+      strict-transport-security:
+      - max-age=631138519
+      x-access-level:
+      - read
+      x-connection-hash:
+      - 95c51cb4f1f45930931dfea3833e1fb563d3b6cf6ebbec75a649a0c4189fc2ab
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '180'
+      x-rate-limit-remaining:
+      - '177'
+      x-rate-limit-reset:
+      - '1623414880'
+      x-transaction:
+      - 250935a794ef6cab
+      x-twitter-response-tags:
+      - BouncerCompliant
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_nonce="", oauth_timestamp="",
+        oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="",
+        oauth_token="", oauth_signature=""
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: https://api.twitter.com/1.1/search/tweets.json?max_id=1400651644711235583&q=from%3Agvanrossum&count=100&result_type=recent&include_entities=1
+  response:
+    body:
+      string: '{"statuses":[],"search_metadata":{"completed_in":0.009,"max_id":1400651644711235583,"max_id_str":"1400651644711235583","query":"from%3Agvanrossum","refresh_url":"?since_id=1400651644711235583&q=from%3Agvanrossum&result_type=recent&include_entities=1","count":100,"since_id":0,"since_id_str":"0"}}'
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      content-disposition:
+      - attachment; filename=json.json
+      content-length:
+      - '296'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 11 Jun 2021 12:33:11 GMT
+      expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      last-modified:
+      - Fri, 11 Jun 2021 12:33:11 GMT
+      pragma:
+      - no-cache
+      server:
+      - tsa_o
+      set-cookie:
+      - personalization_id="v1_eJBwnRPqLVRgefilEWHXAA=="; Max-Age=63072000; Expires=Sun,
+        11 Jun 2023 12:33:11 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - guest_id=v1%3A162341479183573293; Max-Age=63072000; Expires=Sun, 11 Jun 2023
+        12:33:11 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      status:
+      - 200 OK
+      strict-transport-security:
+      - max-age=631138519
+      x-access-level:
+      - read
+      x-connection-hash:
+      - 9410d9c3dd9ef8e527b05366b6408267a388b3f6f1a6425a9dbb3dd08f8523d6
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '180'
+      x-rate-limit-remaining:
+      - '176'
+      x-rate-limit-reset:
+      - '1623414880'
+      x-transaction:
+      - 294eebca5740e276
+      x-twitter-response-tags:
+      - BouncerCompliant
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

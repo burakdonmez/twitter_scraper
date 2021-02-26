@@ -1,0 +1,74 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_nonce="", oauth_timestamp="",
+        oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="",
+        oauth_token="", oauth_signature=""
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: https://api.twitter.com/1.1/search/tweets.json?q=from%3Aasdasdsadsadasdsafasf&include_entities=1&result_type=recent&count=30
+  response:
+    body:
+      string: '{"statuses":[],"search_metadata":{"completed_in":0.009,"max_id":1403329466391314432,"max_id_str":"1403329466391314432","query":"from%3Aasdasdsadsadasdsafasf","refresh_url":"?since_id=1403329466391314432&q=from%3Aasdasdsadsadasdsafasf&result_type=recent&include_entities=1","count":30,"since_id":0,"since_id_str":"0"}}'
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      content-disposition:
+      - attachment; filename=json.json
+      content-length:
+      - '317'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 11 Jun 2021 12:33:12 GMT
+      expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      last-modified:
+      - Fri, 11 Jun 2021 12:33:12 GMT
+      pragma:
+      - no-cache
+      server:
+      - tsa_o
+      set-cookie:
+      - personalization_id="v1_lmMS6lvCCi3OU1x0BOmt1w=="; Max-Age=63072000; Expires=Sun,
+        11 Jun 2023 12:33:12 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - guest_id=v1%3A162341479236054051; Max-Age=63072000; Expires=Sun, 11 Jun 2023
+        12:33:12 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      status:
+      - 200 OK
+      strict-transport-security:
+      - max-age=631138519
+      x-access-level:
+      - read
+      x-connection-hash:
+      - 123a61aa1ac716b3ffe27c6587a38688632bd2c36af8a654f453e53ed96477ff
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '180'
+      x-rate-limit-remaining:
+      - '175'
+      x-rate-limit-reset:
+      - '1623414880'
+      x-transaction:
+      - 226a59d3546b4d7d
+      x-twitter-response-tags:
+      - BouncerCompliant
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

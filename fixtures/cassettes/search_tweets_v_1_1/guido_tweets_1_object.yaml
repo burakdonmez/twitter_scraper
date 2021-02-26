@@ -1,0 +1,74 @@
+# guido van rossum tweets. api returns 10 tweets even though the requested number is 30
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_nonce="", oauth_timestamp="",
+        oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="",
+        oauth_token="", oauth_signature=""
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: https://api.twitter.com/1.1/search/tweets.json?q=from%3Agvanrossum&include_entities=1&result_type=recent&count=30
+  response:
+    body:
+      string: '{"statuses":[{"created_at":"Thu Jun 10 23:13:35 +0000 2021","id":1403128238184956000,"text":"dummy","entities":{"hashtags":[{"name":"dummy"},{"name":"dumm2"}]},"user":{"id":15804774,"name":"GuidovanRossum","screen_name":"gvanrossum"},"retweet_count":5,"favorite_count":27}],"search_metadata":{"completed_in":0.041,"max_id":1403128238184956000,"max_id_str":"1403128238184955906","next_results":"?max_id=1400651644711235583&q=from%3Agvanrossum&count=30&include_entities=1&result_type=recent","query":"from%3Agvanrossum","refresh_url":"?since_id=1403128238184955906&q=from%3Agvanrossum&result_type=recent&include_entities=1","count":30,"since_id":0,"since_id_str":"0"}}'
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      content-disposition:
+      - attachment; filename=json.json
+      content-length:
+      - '31033'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 11 Jun 2021 12:33:11 GMT
+      expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      last-modified:
+      - Fri, 11 Jun 2021 12:33:11 GMT
+      pragma:
+      - no-cache
+      server:
+      - tsa_o
+      set-cookie:
+      - personalization_id="v1_jAnYUcdly0v7cJ8riA0BUA=="; Max-Age=63072000; Expires=Sun,
+        11 Jun 2023 12:33:11 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - guest_id=v1%3A162341479124223037; Max-Age=63072000; Expires=Sun, 11 Jun 2023
+        12:33:11 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      status:
+      - 200 OK
+      strict-transport-security:
+      - max-age=631138519
+      x-access-level:
+      - read
+      x-connection-hash:
+      - 95c51cb4f1f45930931dfea3833e1fb563d3b6cf6ebbec75a649a0c4189fc2ab
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '180'
+      x-rate-limit-remaining:
+      - '177'
+      x-rate-limit-reset:
+      - '1623414880'
+      x-transaction:
+      - 250935a794ef6cab
+      x-twitter-response-tags:
+      - BouncerCompliant
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
